@@ -1,249 +1,264 @@
-/* ------ Global ------ */
+/* ---------------- GLOBAL ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #ffffff;
-    color: #1a1a1a;
+  background-color: #f8fafc;
+  color: #222;
+  line-height: 1.6;
 }
 
-/* ------ Navbar ------ */
-nav {
-    background: #0A4D8C;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
+/* ---------------- HEADER ---------------- */
+header {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav a {
-    text-decoration: none;
-    color: #e8f3ff;
-    font-size: 16px;
-    font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-nav a.active, nav a:hover {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 4px;
+nav a:hover,
+nav a.active {
+  color: #38bdf8;
 }
 
-/* ------ Layout ------ */
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* ---------------- CONTACT WRAPPER ---------------- */
 .contact-wrapper {
-    width: 90%;
-    max-width: 1000px;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
-/* ------ Contact Card ------ */
+/* Contact Card */
 .contact-card {
-    background: #f8fbff;
-    border: 1px solid #dbe6f1;
-    padding: 30px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
-    transition: 0.3s ease;
-    opacity: 0;
-    transform: translateY(25px);
-    width: 100%;
-    max-width: 700px; /* keep card narrow and centered */
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
 }
 
 .contact-card.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .contact-card h2 {
-    color: #0A4D8C;
-    margin-bottom: 15px;
-}
-
-/* Ensure FAQ sits below the form and doesn't stretch too wide */
-.faq {
-    width: 100%;
-    max-width: 800px;
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 20px;
 }
 
 /* Form */
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 12px 0;
-    border: 1px solid #bfd4e7;
-    border-radius: 4px;
-    font-size: 15px;
-    transition: border-color 0.2s;
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 14px 0;
+  border: 1px solid #d0d7e2;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #222;
+  background: #f1f5f9;
+  transition: border-color 0.3s;
 }
 
-input:focus, textarea:focus {
-    border-color: #0A4D8C;
-    outline: none;
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
 }
 
 button {
-    width: 100%;
-    padding: 14px;
-    background: #0A4D8C;
-    border: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.1s ease;
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
-    background: #093d6e;
+  background: #38bdf8;
 }
 
 button:active {
-    transform: scale(0.98);
+  transform: scale(0.97);
 }
 
 /* Contact Details */
 .details {
-    margin-top: 20px;
-    line-height: 26px;
-    font-size: 15px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 28px;
 }
 
-/* ------ FAQ ------ */
+/* ---------------- FAQ ---------------- */
+.faq {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
+
+.faq.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .faq h2 {
-    color: #0A4D8C;
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 20px;
 }
 
 .accordion-item {
-    border: 1px solid #cfd8e3;
-    margin-bottom: 12px;
-    border-radius: 4px;
-    overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
 }
 
 .accordion {
-    width: 100%;
-    padding: 15px;
-    background: #ffffff;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    color: #0A4D8C;
-    font-weight: 600;
+  width: 100%;
+  padding: 18px;
+  background: #f8fafc;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2563eb;
+  display: flex;
+  justify-content: space-between;
 }
 
 .arrow {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .rotate {
-    transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .panel {
-    max-height: 0;
-    overflow: hidden;
-    background: #f3f7fb;
-    padding: 0 15px;
-    transition: max-height 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  background: #eef2f7;
+  padding: 0 18px;
+  color: #475569;
+  transition: max-height 0.3s ease-out;
 }
 
 .panel.show {
-    max-height: 140px;
-    padding: 15px;
-    color: #444;
+  max-height: 200px;
+  padding: 18px;
 }
 
-/* Responsive: Tablet */
-@media (max-width: 1000px) {
-    .contact-wrapper {
-        width: 95%;
-        max-width: 900px;
-        gap: 30px;
-    }
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 900px) {
+  header {
+    padding: 20px 30px;
+  }
 
-    .contact-card {
-        padding: 24px;
-        max-width: 720px;
-    }
+  nav a {
+    margin-left: 15px;
+    font-size: 0.95rem;
+  }
 
-    .faq {
-        max-width: 760px;
-    }
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .contact-wrapper {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .contact-card,
+  .faq {
+    padding: 28px;
+  }
 }
 
-/* Responsive: Mobile */
-@media (max-width: 700px) {
-    /* Nav stacks and becomes compact */
-    nav {
-        padding: 12px 18px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    nav ul {
-        display: flex;
-        gap: 12px;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-    }
+  nav {
+    margin-top: 10px;
+  }
 
-    nav .logo {
-        font-size: 18px;
-    }
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
 
-    nav a { font-size: 15px; }
+  button {
+    font-size: 0.95rem;
+  }
+}
 
-    .contact-wrapper {
-        width: 95%;
-        margin: 30px auto;
-        gap: 20px;
-    }
-
-    .contact-card {
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    input, textarea {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    button {
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .details { font-size: 14px; }
-
-    .accordion {
-        font-size: 15px;
-        padding: 12px;
-    }
-
-    .panel.show {
-        max-height: 240px;
-    }
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
 }

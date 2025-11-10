@@ -1,94 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junk Software Solutions</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="logo.png">
+  <title>Junk Software Solutions</title>
+  <link rel="stylesheet" href="contact.css" />
 </head>
-
 <body>
 
-    <!-- ✅ Navbar -->
+  <!-- ✅ Header -->
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Company Logo" class="logo">
+      <h1>Junk Software Solutions</h1>
+    </div>
     <nav>
-        <div class="logo">BusinessWeb</div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
-        </ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="career.html">Career</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
+  </header>
 
-    <section class="contact-wrapper">
+  <!-- ✅ Contact Hero Section -->
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>We’re here to help with any questions or custom software needs.</p>
+  </section>
 
-        <div class="contact-card">
-            <h2>Let's Connect</h2>
+  <!-- ✅ Contact Content -->
+  <section class="contact-wrapper">
 
-            <!-- ✅ Contact Form -->
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <textarea rows="4" placeholder="Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    <!-- Contact Form -->
+    <div class="contact-card">
+      <h2>Let's Connect</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <textarea rows="4" placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
-            <!-- ✅ Contact Details -->
-            <div class="details">
-                <p>📍 123 Business Street, Bangalore, India</p>
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ info@business.com</p>
-                <p>🕘 Mon–Fri • 9AM–6PM</p>
-            </div>
-        </div>
+      <!-- Company Details -->
+      <div class="details">
+        <p>📍 123 Tech Park, Bangalore, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ support@junksoftwaresolutions.com</p>
+        <p>🕘 Mon–Fri • 9AM–6PM</p>
+      </div>
+    </div>
 
-        <!-- ✅ FAQ Section -->
-        <div class="faq">
-            <h2>Frequently Asked Questions</h2>
+    <!-- ✅ FAQ Section -->
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
 
-            <div class="accordion-item">
-                <button class="accordion">What services do you offer?<span class="arrow">▼</span></button>
-                <div class="panel"><p>We provide software development & IT solutions.</p></div>
-            </div>
+      <div class="accordion-item">
+        <button class="accordion">Do you provide support after development?<span class="arrow">▼</span></button>
+        <div class="panel"><p>Yes! We offer ongoing maintenance and updates for all projects.</p></div>
+      </div>
 
-            <div class="accordion-item">
-                <button class="accordion">Do you provide long-term support?<span class="arrow">▼</span></button>
-                <div class="panel"><p>Yes, dedicated support is available for all clients.</p></div>
-            </div>
+      <div class="accordion-item">
+        <button class="accordion">How can I request a project quote?<span class="arrow">▼</span></button>
+        <div class="panel"><p>Simply fill out the form above or email us directly.</p></div>
+      </div>
 
-            <div class="accordion-item">
-                <button class="accordion">How can I request a quote?<span class="arrow">▼</span></button>
-                <div class="panel"><p>Submit the form above or email us directly.</p></div>
-            </div>
-        </div>
+      <div class="accordion-item">
+        <button class="accordion">What industries do you work with?<span class="arrow">▼</span></button>
+        <div class="panel"><p>We work across multiple domains including healthcare, retail, and finance.</p></div>
+      </div>
+    </div>
 
-    </section>
+  </section>
 
-    <!-- ✅ Script for micro animations -->
-    <script>
-        const accordions = document.querySelectorAll(".accordion");
-        accordions.forEach(btn => {
-            btn.addEventListener("click", () => {
-                const panel = btn.nextElementSibling;
-                const arrow = btn.querySelector(".arrow");
-                panel.classList.toggle("show");
-                arrow.classList.toggle("rotate");
-            });
-        });
+  <!-- ✅ Footer -->
+  <footer>
+    © 2025 Junk Software Solutions. All Rights Reserved.
+  </footer>
 
-        // Scroll Fade Animation
-        const sections = document.querySelectorAll(".contact-card, .faq");
-        const revealOnScroll = () => {
-            sections.forEach(sec => {
-                const secPos = sec.getBoundingClientRect().top;
-                if(secPos < window.innerHeight - 100){
-                    sec.classList.add("fade-in");
-                }
-            });
-        };
-        window.addEventListener("scroll", revealOnScroll);
-        revealOnScroll();
-    </script>
+  <!-- ✅ FAQ Interaction Script -->
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const panel = btn.nextElementSibling;
+        const arrow = btn.querySelector(".arrow");
+        panel.classList.toggle("show");
+        arrow.classList.toggle("rotate");
+      });
+    });
+
+    // Scroll Fade Animation
+    const sections = document.querySelectorAll(".contact-card, .faq");
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const secPos = sec.getBoundingClientRect().top;
+        if(secPos < window.innerHeight - 100){
+          sec.classList.add("fade-in");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll();
+  </script>
 
 </body>
 </html>
