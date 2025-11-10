@@ -1,0 +1,197 @@
+/* ---------- GENERAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  padding: 20px 60px;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #38bdf8;
+}
+
+/* ---------- HERO SECTION ---------- */
+.career-hero {
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.career-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.career-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ---------- CAREERS SECTION ---------- */
+.careers {
+  padding: 60px 20px;
+  background-color: #f1f5f9;
+  text-align: center;
+}
+
+.careers h3 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.careers h3::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #2563eb;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* ---------- JOB CARD ---------- */
+.job-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.job-card h4 {
+  color: #0f172a;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  color: #475569;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.job-card strong {
+  color: #0f172a;
+}
+
+/* ---------- BUTTON ---------- */
+.btn-primary {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+/* ---------- CTA SECTION ---------- */
+.cta {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.cta h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta a.btn-primary {
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.cta a.btn-primary:hover {
+  background: #e0e7ff;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  .career-hero h2 {
+    font-size: 2rem;
+  }
+
+  .job-card {
+    padding: 20px;
+  }
+}
