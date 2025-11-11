@@ -207,21 +207,55 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
 }
-
-/* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
-  .about {
+  header {
+    padding: 20px 30px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 0.95rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .contact-wrapper {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .contact-card,
+  .faq {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
     flex-direction: column;
     text-align: center;
   }
 
-  .about img {
-    margin-top: 30px;
-    width: 100%;
+  nav {
+    margin-top: 10px;
   }
 
-  .service-cards {
-    flex-direction: column;
-    align-items: center;
+  input,
+  textarea {
+    font-size: 0.9rem;
   }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
 }
