@@ -169,29 +169,55 @@ nav a.active {
 
 /* ---------- FOOTER ---------- */
 footer {
-  background: #0f172a;
-  color: #94a3b8;
+  background-color: #0f172a;
+  color: #cbd5e1;
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
 }
 
 /* ---------- RESPONSIVE DESIGN ---------- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 0.95rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .contact-wrapper {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .contact-card,
+  .faq {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 600px) {
   header {
     flex-direction: column;
     text-align: center;
   }
 
-  nav a {
-    margin: 10px;
+  nav {
+    margin-top: 10px;
   }
 
-  .career-hero h2 {
-    font-size: 2rem;
+  input,
+  textarea {
+    font-size: 0.9rem;
   }
 
-  .job-card {
-    padding: 20px;
+  button {
+    font-size: 0.95rem;
   }
 }

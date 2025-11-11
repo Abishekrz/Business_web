@@ -199,14 +199,7 @@ nav a.active {
   margin-bottom: 20px;
 }
 
-/* ---------- FOOTER ---------- */
-footer {
-  background-color: #0f172a;
-  color: #cbd5e1;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-}
+/*-------------Responsive-------------*/
 @media (max-width: 900px) {
   header {
     padding: 20px 30px;
