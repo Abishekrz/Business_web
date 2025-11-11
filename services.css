@@ -123,6 +123,19 @@ footer {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  nav a {
+    margin-left: 15px;
+    font-size: 0.95rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
   .service-row {
     flex-direction: column;
   }
@@ -138,5 +151,25 @@ footer {
 
   .service-text {
     padding: 30px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.95rem;
   }
 }
