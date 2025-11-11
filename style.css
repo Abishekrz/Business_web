@@ -1,0 +1,565 @@
+/* ================== GLOBAL STYLES ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ================== HEADER ================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  padding: 20px 60px;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #38bdf8;
+  font-weight: 600;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 4px;
+}
+
+/* ================== HERO SECTIONS ================== */
+.hero,
+.about-hero,
+.career-hero {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  padding: 100px 20px;
+}
+
+.hero h2,
+.about-hero h2,
+.career-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p,
+.about-hero p,
+.career-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ================== ABOUT PAGE ================== */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #f1f5f9;
+  flex-wrap: wrap;
+}
+
+.about-content {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 30px;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.about img {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #1e293b;
+}
+
+/* ---------- TEAM SECTION ---------- */
+.team {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.team h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.team p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+/* ---------- HOME SERVICES ---------- */
+.home-services {
+  text-align: center;
+  padding: 60px;
+}
+
+.home-services h3 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h4 {
+  color: #0f172a;
+  margin-top: 15px;
+  font-size: 1.3rem;
+}
+
+.card p {
+  color: #475569;
+  padding: 0 15px;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+/* Values Section */
+.values {
+  background: #f1f5f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+.value-card:hover { transform: translateY(-5px); }
+
+/* ================== SERVICES PAGE ================== */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px;
+  background-color: #f1f5f9;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-row:hover {
+  transform: translateY(-5px);
+}
+
+.service-row img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-text {
+  width: 50%;
+  padding: 40px;
+}
+
+.service-text h3 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 15px;
+}
+
+.service-text p {
+  font-size: 1rem;
+  color: #475569;
+}
+
+/* ---------- REVERSE LAYOUT ---------- */
+.service-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ================== CONTACT PAGE ================== */
+.contact-wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Contact Card */
+.contact-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
+
+.contact-card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-card h2 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+/* Form */
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 14px 0;
+  border: 1px solid #d0d7e2;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #222;
+  background: #f1f5f9;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #38bdf8;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Contact Details */
+.details {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 28px;
+}
+
+/* ---------------- FAQ ---------------- */
+.faq {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s ease;
+}
+
+.faq.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq h2 {
+  font-size: 1.8rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion {
+  width: 100%;
+  padding: 18px;
+  background: #f8fafc;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2563eb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  background: #eef2f7;
+  padding: 0 18px;
+  color: #475569;
+  transition: max-height 0.3s ease-out;
+}
+
+.panel.show {
+  max-height: 200px;
+  padding: 18px;
+}
+
+/* ================== CAREER PAGE ================== */
+.careers {
+  padding: 60px 20px;
+  background-color: #f1f5f9;
+  text-align: center;
+}
+
+.careers h3 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.careers h3::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #2563eb;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* ---------- JOB CARD ---------- */
+.job-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.job-card h4 {
+  color: #0f172a;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  color: #475569;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.job-card strong {
+  color: #0f172a;
+}
+
+/* ---------- BUTTON ---------- */
+.btn-primary {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+
+/* ================== CTA & FOOTER ================== */
+.cta {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.cta h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta a.btn-primary {
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.cta a.btn-primary:hover {
+  background: #e0e7ff;
+}
+footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .service-row {
+    flex-direction: column;
+  }
+
+  .service-row.reverse {
+    flex-direction: column;
+  }
+
+  .service-row img,
+  .service-text {
+    width: 100%;
+  }
+
+  .service-text {
+    padding: 30px 20px;
+  }
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 900px) {
+  header { padding: 20px 30px; }
+  nav a { margin-left: 15px; font-size: 0.95rem; }
+  .hero h2 { font-size: 2rem; }
+  .service-row { flex-direction: column; }
+}
+
+@media (max-width: 600px) {
+  header { flex-direction: column; text-align: center; }
+  nav { margin-top: 10px; }
+  input, textarea { font-size: 0.9rem; }
+  button { font-size: 0.95rem; }
+}
