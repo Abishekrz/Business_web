@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- HEADER ---------- */
+/* ---------------- HEADER ---------------- */
 header {
   background-color: #0f172a;
   color: #fff;
@@ -21,10 +21,6 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-
-header h1 {
-  font-size: 1.6rem;
 }
 
 nav a {
