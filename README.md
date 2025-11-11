@@ -40,8 +40,9 @@ business-web/
 └── README.md
 ```
 ## Contact
-    Abishekrz2004@gmail.com
+    abishekrz2004@gmail.com
 
 
 
 ⭐ If you like this project, give it a star!
+
