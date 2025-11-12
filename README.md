@@ -33,10 +33,10 @@ business-web/
 ├── about.html
 ├── services.html
 ├── contact.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
+├── carrer.html
+├── style.css
+├── .gitignore
+├── images
 └── README.md
 ```
 ## Contact
@@ -45,4 +45,5 @@ business-web/
 
 
 ⭐ If you like this project, give it a star!
+
 
